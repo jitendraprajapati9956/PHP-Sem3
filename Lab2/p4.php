@@ -1,4 +1,7 @@
 <?php
+echo "<h5>Create php script which declare two variable and perform all arithmetic
+operations on the
+variables</h5>";
 $var1 = 10;
 $var2 = 5;
 
