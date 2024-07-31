@@ -1,4 +1,6 @@
 <?php
+echo "<h5>Create a php script which prints the reverse of the number. E.g 123 => 321
+</h5>";
 function reverseNumber($number) {
     $reverse = 0;
     while ($number > 0) {
