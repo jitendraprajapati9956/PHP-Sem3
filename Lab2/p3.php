@@ -2,12 +2,24 @@
 the new data types (integer to string , string to integer, Boolean to integer, integer to
 float, float to integer) -->
 <?php
+echo "<h5>Create a php script which changes the data types using appropriate values. And display
+the new data types (integer to string , string to integer, Boolean to integer, integer to
+float, float to integer)</h5>";
     $num = 11;
     $num3 = 3.14;
     $str = "7048";
     $boole = true;
     echo "<br>"; 
 
+    var_dump($num);
+    echo "<br>"; 
+    var_dump($num3);
+    echo "<br>"; 
+    var_dump($str);   
+    echo "<br>"; 
+    var_dump($boole);
+    echo "<br>"; 
+    echo "<br>"; 
     $str1 = strval($num);
     echo "int to Strig:$str1";
     echo "<br>";
@@ -24,4 +36,17 @@ float, float to integer) -->
     echo "float to int:$floatToint";
     echo "<br>";
     
+
+    echo "<br>"; 
+
+    var_dump($str1);
+    echo "<br>"; 
+    var_dump($strToint);
+    echo "<br>"; 
+    var_dump($boolToint);   
+    echo "<br>"; 
+    var_dump($intTofloat);
+    echo "<br>"; 
+    var_dump($floatToint);
+    echo "<br>"; 
 ?>
