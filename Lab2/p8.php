@@ -1,4 +1,7 @@
 <?php
+echo "<h5> Create a php script which declares two global variables and demonstrates the
+scope of the global variable . {display the appropriate error also in output by
+making changes into script)</h5>";
 
 global $globalVar1;
 global $globalVar2;
