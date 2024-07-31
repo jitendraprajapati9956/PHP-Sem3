@@ -1,6 +1,9 @@
 <?php
+echo "<h5>Given an unsorted ARRAY and a number N, write a PHP script to find if there exists a
+pair of elements in the array whose difference is equal to N. [Note: Solution has multiple
+approach with time complexity O(nLogn) and time complexity O(n)</h5>";
 // Function to find if there exists a pair in the array with difference N
-function findPairWithDifference($arr, $N) {
+function onlogn($arr, $N) {
     // Sort the array
     sort($arr);
     
@@ -21,22 +24,22 @@ function findPairWithDifference($arr, $N) {
     return false; // No such pair found
 }
 
-function findPairWithDifferenceLinear($arr, $N) {
-    $hashMap = array();
+function on($arr, $N) {
+    $logn = array();
     
     foreach ($arr as $num) {
-        $hashMap[$num] = true; // Store each number in the hash map
+        $logn[$num] = true; // Store each number in the hash map
     }
     
     foreach ($arr as $num) {
-        $target1 = $num + $N; // Potential pair with difference N
-        $target2 = $num - $N; // Potential pair with difference -N
+        $one = $num + $N; // Potential pair with difference N
+        $two = $num - $N; // Potential pair with difference -N
         
         // Check if either target exists in the hash map and is not the same number
-        if (isset($hashMap[$target1]) && $target1 != $num) {
+        if (isset($logn[$one]) && $one != $num) {
             return true;
         }
-        if (isset($hashMap[$target2]) && $target2 != $num) {
+        if (isset($logn[$two]) && $two != $num) {
             return true;
         }
     }
@@ -55,7 +58,7 @@ echo "<br>";
 echo "N: $N";
 echo "<br>";
 
-if (findPairWithDifference($arr, $N)) {
+if (onlogn($arr, $N)) {
     echo "There exists a pair with difference $N in the array.";
 } else {
     echo "No such pair found with difference $N in the array.";
@@ -63,7 +66,7 @@ if (findPairWithDifference($arr, $N)) {
 echo "<br>";
 echo "<h1>Approach 2: O(n) Time Complexity</h1>";
 
-if (findPairWithDifferenceLinear($arr, $N)) {
+if (on($arr, $N)) {
     echo "There exists a pair with difference $N in the array.";
 } else {
     echo "No such pair found with difference $N in the array.";
