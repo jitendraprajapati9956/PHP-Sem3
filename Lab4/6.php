@@ -1,4 +1,10 @@
 <?php
+echo "<h5>Create a PHP script to demonstrate possible ways for variable length arguments. Pass
+integer and float values to a functions and calculate
+○ sum of all arguments
+○ product of all arguments
+○ count of integer and real number arguments
+○ count of lowercase character, uppercase character and special character</h5>";
 // Function to calculate sum of all arguments
 function calcSum(...$no) {
     $sum = 0;
