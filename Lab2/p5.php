@@ -1,5 +1,7 @@
 <?php
-
+echo "<h5>Create a php script which shows all the comparison operators
+working/demonstration.
+</h5>";
 $var1 = 10;
 $var2 = 5;
 
@@ -13,6 +15,7 @@ $lessThanOrEqual = $var1 <= $var2;
 echo "Variable 1:$var1 ";
 echo "<br>";
 echo "Variable 2:$var2";
+echo "<br>";
 echo "<br>";
 echo "Equal (==):$equal" ;
 echo "<br>";
